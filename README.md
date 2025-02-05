@@ -1,4 +1,4 @@
-# Spotify Imersão
+# [Spotify Imersão](https://imersao-clone-spotify-alura.vercel.app)
 
 Este projeto é uma recriação de uma interface inspirada no Spotify. Ele utiliza HTML, CSS e JavaScript para simular elementos visuais e interativos presentes na plataforma de streaming de música. <br>
 
