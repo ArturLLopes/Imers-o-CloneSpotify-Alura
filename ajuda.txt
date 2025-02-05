@@ -1,0 +1,30 @@
+-- npm i json-server -g --
+
+ para instalar o pack de json
+
+ -- json-server --watch api-artists/artists.json --port 3000 --
+
+ json-server --watch src/componentes/services/artists.json --port 3000
+
+ usado para subir a api para alimentar o htlm
+ deve ser completado com o nome correto da pasata e do arquivo json a porta é vc que define
+ porem deve ser usada a msm no javascript na hora de acessar 
+
+ para instalar o react
+
+ -- npx creat-react-app soptify-react --
+
+ *erro ao executar por falta de pastas no react
+ -- npm install @testing-library/react@latest web-vitals --
+
+ -- npm start --
+
+ vai gerar os arquivos react
+
+ estudar o frameworks next.js para aprofundar no react
+ e typescript
+
+
+ no react na importação de bibliotecas esternas deveser usar o npm pra instalar ela
+ 
+ --npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons @fortawesome/fontawesome-svg-core --

@@ -1,0 +1,109 @@
+@media screen and (max-width: 1015px) {
+  .offer__list-item {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-container {
+    min-width: 50px;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .header__navigation{
+    width: 450px;
+  }
+  .header__login{
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 30px;
+  
+  }
+
+  .header__login .subscribe , .header__login .login{
+    margin-right: 0px;
+    font-size: 16px;
+  }
+  .header__login .login button{
+    height: 20px;
+  }
+  .header__search {
+    width: 50px;
+  }
+  .header__search input {
+    width: 10px;
+  }
+
+  .artist-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+ .sidebar{
+  width: 200px;
+ }
+ .main-container{
+  margin-left: 200px;
+ }
+ 
+  nav,.library {
+    width: 150px;
+  } 
+
+  .languages .languages__button{
+    max-width: 120px;  
+    
+    padding: 5px;
+  }
+  .languages__button span {
+    width: 10px;
+    height: 10px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 8px;
+    
+  }
+
+  .header__navigation{
+    width: 295px;
+  }
+  .header__login{
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 30px;
+  
+  }
+
+  .header__login .subscribe , .header__login .login{
+    margin-right: 0px;
+    font-size: 8px;
+  }
+  .header__login .login button{
+    height: 20px;
+  }
+  .header__search {
+    width: 50px;
+  }
+  .header__search input {
+    width: 10px;
+  }
+
+  .card-img, .artist-card{
+    width: 200px;
+  }
+
+  .offer__list-item {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

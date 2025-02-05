@@ -1,0 +1,376 @@
+/* HEADER - Estilo do cabeçalho */
+
+/* Configuração do contêiner principal do layout */
+.main-container {
+  max-width: 80vw; /* Define a largura máxima como 80% da largura da janela de visualização */
+  height: 100vh; /* Altura total da janela de visualização */
+  margin-left: 320px; /* Margem à esquerda para espaçar o contêiner */
+  margin-right: 56px; /* Margem à direita para espaçar o contêiner */
+}
+
+/* Configuração do contêiner de navegação no cabeçalho */
+.header__navigation {
+  display: flex; /* Exibe os elementos em linha horizontal */
+  justify-content: space-between; /* Espaça os elementos para as extremidades */
+  align-items: center; /* Centraliza os itens verticalmente */
+  padding: 16px; /* Espaçamento interno */
+  margin: 10px; /* Espaçamento externo */
+  border-radius: 8px; /* Bordas arredondadas */
+  background-color: #121212; /* Cor de fundo escura */
+  padding: 12px; /* Espaçamento interno adicional */
+}
+
+/* Configuração da barra de navegação */
+.header__navigation .navigation {
+  display: flex; /* Itens dispostos horizontalmente */
+  justify-content: space-around; /* Espaço uniforme entre os itens */
+  align-items: center; /* Centraliza os itens verticalmente */
+}
+
+/* Espaçamento adicional para o botão de seta à esquerda */
+.header__navigation .navigation .arrow-left {
+  margin-right: 1.25rem; /* Margem direita de 1.25rem */
+}
+
+/* Estilo para os botões de seta (esquerda e direita) */
+.arrow-left,
+.arrow-right {
+  display: flex; /* Centraliza o conteúdo do botão */
+  align-items: center; /* Alinha o conteúdo verticalmente */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  width: 32px; /* Largura do botão */
+  height: 32px; /* Altura do botão */
+  background: var(--bg-icon); /* Cor de fundo definida por variável */
+  background-color: var(--bg-arrow-color); /* Cor adicional de fundo */
+  border-radius: 50%; /* Formato circular */
+  border: none; /* Remove a borda */
+  cursor: pointer; /* Cursor em formato de mão ao passar */
+}
+
+/* Configuração para o contêiner de login */
+.header__login {
+  display: flex; /* Itens dispostos horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+}
+
+/* Estilo da barra de pesquisa no cabeçalho */
+.header__search {
+  display: flex; /* Itens dispostos horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  width: 364px; /* Largura fixa */
+  height: 48px; /* Altura fixa */
+  margin-left: 8px; /* Margem à esquerda */
+  background-color: #242424; /* Cor de fundo escura */
+  border-radius: 500px; /* Bordas extremamente arredondadas */
+  border: 1px solid transparent; /* Borda transparente */
+}
+
+/* Configuração do ícone de pesquisa dentro da barra */
+.header__search img {
+  width: 16px; /* Largura do ícone */
+  height: 16px; /* Altura do ícone */
+  margin-left: 10px; /* Espaçamento à esquerda */
+}
+
+/* Estilo para o campo de entrada de texto da barra de pesquisa */
+.header__search input {
+  background: transparent; /* Fundo transparente */
+  border: none; /* Sem bordas */
+  padding: 0px 100px 0 12px; /* Espaçamento interno (topo, direita, baixo, esquerda) */
+  color: #fff; /* Texto branco */
+  text-overflow: ellipsis; /* Adiciona "..." para texto muito longo */
+  overflow: hidden; /* Oculta texto excedente */
+  white-space: nowrap; /* Impede quebra de linha */
+  outline: none; /* Remove o contorno ao focar */
+}
+
+/* Estilo do texto de inscrição (subscribe) */
+.header__login .subscribe {
+  color: #a7a7a7; /* Cor do texto cinza claro */
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: 700; /* Texto em negrito */
+  background-color: transparent; /* Fundo transparente */
+  margin-right: 32px; /* Margem à direita */
+}
+
+/* Estilo do botão de login */
+.header__login .login {
+  width: 100px; /* Largura do botão */
+  height: 48px; /* Altura do botão */
+  color: #000; /* Cor do texto preta */
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: 700; /* Texto em negrito */
+  border-radius: 40px; /* Bordas arredondadas */
+}
+
+  /* PLAYLIST - Estilização do contêiner e itens da playlist */
+
+/* Contêiner principal da playlist */
+.playlist-container {
+  height: 68vh auto; /* Define altura proporcional à janela de visualização (68vh). 'auto' parece ser redundante aqui. */
+  padding-top: 16px; /* Espaçamento interno na parte superior */
+  margin: 10px; /* Espaçamento externo ao redor */
+  border-radius: 10px; /* Bordas arredondadas */
+  background-color: #121212; /* Cor de fundo escura */
+}
+
+/* Margem para o bloco da playlist */
+.playlist {
+  margin: 24px; /* Espaçamento externo ao redor */
+}
+
+/* Estilo para o título de saudação da playlist */
+.playlist #greeting {
+  color: #fff; /* Cor do texto branca */
+  font-size: 32px; /* Tamanho da fonte grande */
+  font-weight: 700; /* Texto em negrito */
+  margin-bottom: 48px; /* Espaçamento inferior */
+}
+
+/* Estilo para os textos de sessões */
+.playlist .session {
+  color: #fff; /* Cor do texto branca */
+  font-size: 24px; /* Tamanho da fonte */
+  font-weight: 700; /* Texto em negrito */
+}
+
+/* SCROLL - Configurações para contêiner com barra de rolagem */
+
+/* Contêiner com rolagem vertical */
+.offer__scroll-container {
+  max-height: 43vh; /* Altura máxima de 43% da altura da janela de visualização */
+  margin: 24px; /* Espaçamento externo ao redor */
+  overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+}
+
+/* Personalização da barra de rolagem no Webkit (Chrome, Edge, Safari) */
+.offer__scroll-container::-webkit-scrollbar {
+  width: 1px; /* Define a largura da barra de rolagem */
+}
+
+/* Personalização do "polegar" da barra de rolagem */
+.offer__scroll-container::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Torna o "polegar" invisível */
+}
+/* FIM SCROLL */
+
+/* Estilização de uma lista de itens */
+.offer__list-item {
+  display: grid; /* Exibe os itens em formato de grade */
+  justify-items: center; /* Centraliza os itens horizontalmente dentro de cada célula */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Define 5 colunas de tamanhos iguais */
+  grid-gap: 16px; /* Espaçamento entre os itens da grade */
+  gap: 16px; /* Espaçamento alternativo entre os itens */
+  margin-bottom: 16px; /* Espaçamento inferior */
+
+  /* Sobrescrevendo estilos de layout com JavaScript */
+  display: grid; /* Certifica que a exibição será em grid */
+  gap: 16px; /* Espaçamento entre as células da grade */
+  grid-gap: 32px; /* Define o espaçamento entre os itens (grid-gap é equivalente a gap) */
+  margin: 0 auto; /* Centraliza a lista horizontalmente */
+}
+
+/* Estilo para os cartões individuais */
+.cards {
+  position: relative; /* Posição relativa para posicionamento interno */
+  width: 220px; /* Largura fixa do cartão */
+  height: 200px; /* Altura fixa do cartão */
+  overflow: hidden; /* Esconde o conteúdo que ultrapassar os limites */
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Estilo para o texto dentro dos cartões */
+.cards span {
+  padding: 16px; /* Espaçamento interno */
+  position: absolute; /* Posicionamento absoluto dentro do cartão */
+  color: #fff; /* Cor do texto branca */
+  font-size: 24px; /* Tamanho da fonte */
+  font-weight: 700; /* Texto em negrito */
+}
+
+
+/* COLOR CARDS - Definição das cores de fundo para diferentes cartões */
+.card1 {
+  background-color: rgb(0, 100, 80); /* Verde escuro */
+}
+.card2 {
+  background-color: rgb(132, 0, 231); /* Roxo brilhante */
+}
+.card3 {
+  background: rgb(30, 50, 100); /* Azul escuro */
+}
+.card4 {
+  background: rgb(140, 25, 50); /* Vermelho escuro */
+}
+.card5 {
+  background: rgb(232, 17, 91); /* Rosa intenso */
+}
+.card6 {
+  background: rgb(83, 122, 161); /* Azul claro acinzentado */
+}
+.card7 {
+  background: rgb(142, 102, 172); /* Roxo suave */
+}
+.card8 {
+  background: rgb(20, 138, 8); /* Verde vibrante */
+}
+.card9 {
+  background: rgb(30, 50, 100); /* Azul escuro (igual ao card3) */
+}
+.card10 {
+  background: rgb(233, 20, 41); /* Vermelho vibrante */
+}
+.card11 {
+  background: rgb(80, 55, 80); /* Roxo escuro */
+}
+.card12 {
+  background: rgb(216, 64, 0); /* Laranja avermelhado */
+}
+.card13 {
+  background: rgb(186, 93, 7); /* Laranja queimado */
+}
+.card14 {
+  background: rgb(0, 30, 80); /* Azul profundo */
+}
+.card15 {
+  background: rgb(60, 30, 80); /* Roxo profundo */
+}
+/* FIM COLOR CARDS */
+
+/* Imagem no contêiner de lista de ofertas */
+.offer__list-item img {
+  position: absolute; /* Posiciona a imagem de forma relativa ao contêiner */
+  right: 0; /* Alinha à direita */
+  bottom: 0; /* Alinha na parte inferior */
+  height: auto; /* Altura proporcional */
+  width: 107px; /* Largura fixa */
+  transform: rotate(25deg) translate(18%, -2%); /* Rotação e deslocamento da imagem */
+}
+
+/* CARD ARTISTA - Estilização de cards para artistas */
+
+/* Variáveis CSS para configurar a grade */
+.artist {
+  --column-count: 5; /* Número de colunas na grade */
+  --grid-gap: 24px; /* Espaçamento entre os itens da grade */
+  --min-container-width: 372px; /* Largura mínima do contêiner */
+}
+
+/* Classe oculta */
+.hidden {
+  display: none; /* Remove o elemento da visualização */
+}
+
+/* Contêiner da grade */
+.grid-container {
+  grid-gap: 24px; /* Espaçamento entre os itens */
+  display: grid; /* Configura o layout como grid */
+  grid-template-columns: repeat(5, minmax(0, 1fr)); /* 5 colunas com largura flexível */
+  min-width: 767px; /* Largura mínima do contêiner */
+}
+
+/* Estilo básico do card de artista */
+.artist-card {
+  background: #181818; /* Fundo escuro */
+  border-radius: 8px; /* Bordas arredondadas */
+  -ms-flex: 1; /* Suporte para flexbox em navegadores antigos */
+  flex: 1; /* Card ocupa o espaço disponível */
+  isolation: isolate; /* Cria um novo contexto de empilhamento */
+  padding: 16px; /* Espaçamento interno */
+  position: relative; /* Posição relativa para sobreposição */
+  transition: background-color 0.3s ease; /* Suaviza a troca de cor no hover */
+  width: 100%; /* Largura total do contêiner pai */
+}
+
+/* Efeito de hover no card de artista */
+.artist-card:hover {
+  background-color: #252525; /* Altera a cor do fundo ao passar o mouse */
+}
+
+/* Imagem dentro do card de artista */
+.card-img {
+  padding-bottom: 100%; /* Proporção quadrada */
+  position: relative; /* Necessário para posicionar o conteúdo interno */
+  width: 100%; /* Largura total */
+  margin-bottom: 16px; /* Espaçamento inferior */
+}
+
+/* Estilo para a imagem do artista (circular) */
+.artist-img {
+  height: 100%; /* Altura total do contêiner */
+  left: 0; /* Alinha à esquerda */
+  position: absolute; /* Posiciona de forma absoluta dentro do contêiner */
+  top: 0; /* Alinha na parte superior */
+  width: 100%; /* Largura total */
+  border-radius: 50%; /* Formato circular */
+}
+
+/* Texto no card de artista */
+.card-text {
+  display: flex; /* Define um layout flexível */
+  flex-direction: column; /* Organiza os itens em coluna */
+  color: #fff; /* Cor do texto branca */
+  overflow: hidden; /* Esconde texto excedente */
+  text-overflow: ellipsis; /* Adiciona "..." para indicar texto cortado */
+  white-space: nowrap; /* Impede quebras de linha */
+  min-height: 62px; /* Altura mínima */
+}
+
+/* Link dentro do texto do card */
+.card-text a {
+  display: inline-block; /* Exibe como bloco inline */
+  max-width: 100%; /* Largura máxima */
+  vertical-align: middle; /* Alinhamento vertical */
+}
+
+/* Nome do artista */
+.artist-name {
+  box-sizing: border-box; /* Inclui padding e borda no cálculo da largura/altura */
+  margin-block: 0px; /* Remove margens superiores e inferiores */
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: 700; /* Texto em negrito */
+  padding-block-end: 8px; /* Espaçamento inferior interno */
+}
+
+/* Categoria do artista */
+.artist-categorie {
+  color: #6a6a6a; /* Cor de texto cinza */
+  font-weight: 400; /* Texto regular */
+  font-size: 0.875rem; /* Tamanho da fonte (14px) */
+}
+
+/* Botão de play no card */
+.play {
+  position: relative; /* Necessário para posicionar o ícone interno */
+}
+
+/* Ícone de play no botão */
+.play .fa-play {
+  position: absolute; /* Posiciona o ícone dentro do botão */
+  right: 10px; /* Alinha à direita */
+  top: 200px; /* Posiciona na parte inferior */
+  padding: 18px; /* Espaçamento interno */
+  background-color: #1db954; /* Cor de fundo verde */
+  border-radius: 100%; /* Formato circular */
+  font-size: 14px; /* Tamanho do ícone */
+  opacity: 0; /* Torna o ícone invisível inicialmente */
+  transition: all ease 0.4s; /* Suaviza a aparição/deslocamento */
+}
+
+/* Exibe o ícone ao passar o mouse no card */
+.artist-card:hover .play .fa-play {
+  opacity: 1; /* Torna o ícone visível */
+  transform: translateY(-20px); /* Move o ícone para cima */
+}
+
+/* Efeito de hover no botão play */
+.play .fa-play:hover {
+  padding: 20px; /* Aumenta o tamanho do botão */
+  cursor: pointer; /* Adiciona o cursor de mão */
+}
+
+/* Contêiner de resultados dos artistas */
+#result-artist {
+  padding: 20px 40px; /* Espaçamento interno (vertical e horizontal) */
+}
+/* FIM CARD ARTISTA */

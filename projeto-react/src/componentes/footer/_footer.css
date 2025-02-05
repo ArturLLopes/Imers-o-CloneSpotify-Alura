@@ -1,0 +1,39 @@
+.disclaimer-premium {
+    position: fixed; /* Fixa no rodapé */
+    bottom: 0; /* Alinha na parte inferior */
+    left: 0; /* Estende até a esquerda */
+    right: 0; /* Estende até a direita */
+    background: linear-gradient(to right, #ae2896, #509bf5); /* Gradiente de fundo */
+    padding: 0px 40px; /* Espaçamento interno */
+    display: flex; /* Layout flexível */
+    justify-content: space-between; /* Espaço entre elementos */
+    align-items: center;
+}
+
+.disclaimer-premium .disclaimer-premium__title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.disclaimer-premium button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.disclaimer-premium button:hover{
+    transform: scale(1.04);
+}
